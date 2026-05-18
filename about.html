@@ -65,19 +65,42 @@
   </div>
 </nav>
 
-<header class="relative h-[70vh] min-h-[520px] flex items-center justify-center overflow-hidden pt-20">
-  <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/high-res-car.png">
-    <source src="assets/car-driving.mp4" type="video/mp4" />
-  </video>
-  <div class="hero-overlay"></div>
-  <div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop">
-    <span class="font-label-sm text-label-sm text-primary tracking-[0.2em] uppercase mb-4 block reveal">Engineered for Perfection</span>
-    <h1 class="font-display-lg text-display-lg text-on-surface uppercase mb-6 leading-tight reveal display-resp">
-      About <span class="text-primary text-glow">Ceramic Pro</span>
-    </h1>
-    <p class="max-w-2xl mx-auto font-body-lg text-body-lg text-on-surface-variant reveal">
-      The global leader in nanoceramic coating technology, redefining the standards of protection for high-value assets across Aotearoa.
-    </p>
+<!-- Hero: typographic + abstract molecular grid (no video / no car image) -->
+<header class="relative pt-40 pb-28 md:pt-48 md:pb-36 overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-br from-[#0d0e12] via-[#121317] to-[#1a1b1f]"></div>
+  <!-- Abstract molecular dot grid -->
+  <div class="absolute inset-0 opacity-[0.18]" aria-hidden="true"
+       style="background-image: radial-gradient(rgba(255,176,204,0.6) 1px, transparent 1.2px); background-size: 24px 24px;"></div>
+  <!-- Glowing orbs -->
+  <div class="absolute -top-32 -left-32 w-[520px] h-[520px] bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="absolute -bottom-40 -right-20 w-[640px] h-[640px] bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+
+  <div class="relative z-10 max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="max-w-5xl">
+      <div class="flex items-center gap-3 mb-8 reveal">
+        <span class="h-px w-12 bg-primary"></span>
+        <span class="font-label-sm text-label-sm text-primary tracking-[0.3em] uppercase">Our Story</span>
+      </div>
+      <h1 class="font-display-lg text-[56px] md:text-[96px] leading-[1.02] tracking-tight font-extrabold mb-10 reveal display-resp">
+        Built on<br/>
+        <span class="text-primary text-glow">10 years</span> of<br/>
+        nanoceramic <span class="italic font-medium text-on-surface-variant">research.</span>
+      </h1>
+      <div class="grid md:grid-cols-3 gap-8 mt-16 max-w-4xl">
+        <div class="reveal border-l border-primary/40 pl-4">
+          <div class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-2">Origin</div>
+          <p class="text-on-surface-variant text-sm">Born from a global mission to replace harsh chemicals with sustainable surface protection.</p>
+        </div>
+        <div class="reveal border-l border-primary/40 pl-4">
+          <div class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-2">Aotearoa</div>
+          <p class="text-on-surface-variant text-sm">Engineered for New Zealand's intense UV, salt-laden air and harsh coastal climates.</p>
+        </div>
+        <div class="reveal border-l border-primary/40 pl-4">
+          <div class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-2">Certified</div>
+          <p class="text-on-surface-variant text-sm">Tested and validated by SGS — the global authority on product certification.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
 
