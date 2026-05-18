@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About Ceramic Pro NZ — Mission, Technology &amp; Benefits</title>
+<meta name="description" content="A decade of nanoceramic research, SGS-certified, protecting assets in 70+ countries. Discover the technology and mission behind Ceramic Pro." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23121317'/%3E%3Ctext x='50' y='62' font-family='Arial' font-size='52' font-weight='800' fill='%23ffb0cc' text-anchor='middle'%3ECP%3C/text%3E%3C/svg%3E" />
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "on-surface-variant": "#e2bdc8", "background": "#121317", "surface-bright": "#38393d",
+          "surface-dim": "#121317", "surface-container-highest": "#343539", "surface": "#121317",
+          "secondary-container": "#4a4949", "on-primary": "#640038", "outline-variant": "#5a3f49",
+          "primary": "#ffb0cc", "primary-container": "#ff45a1", "on-primary-container": "#580031",
+          "tertiary": "#c8c6c5", "surface-container": "#1e1f23", "surface-variant": "#343539",
+          "secondary": "#c8c6c5", "outline": "#a98892", "surface-container-high": "#292a2e",
+          "surface-container-low": "#1a1b1f", "surface-container-lowest": "#0d0e12", "on-surface": "#e3e2e7"
+        },
+        borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem" },
+        spacing: { "margin-desktop": "80px", "section-gap": "120px", "gutter": "24px", "margin-mobile": "20px", "unit": "8px" },
+        fontFamily: { "headline-lg": ["Hanken Grotesk"], "display-lg": ["Hanken Grotesk"], "body-md": ["Inter"], "body-lg": ["Inter"], "label-sm": ["JetBrains Mono"], "headline-md": ["Hanken Grotesk"] },
+        fontSize: {
+          "headline-lg": ["48px", { lineHeight: "56px", letterSpacing: "-0.01em", fontWeight: "700" }],
+          "display-lg": ["72px", { lineHeight: "80px", letterSpacing: "-0.02em", fontWeight: "800" }],
+          "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+          "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+          "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "500" }],
+          "headline-md": ["32px", { lineHeight: "40px", fontWeight: "600" }]
+        }
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="assets/site.css" />
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased">
+
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/10">
+  <div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+    <a class="font-headline-md text-headline-md font-bold tracking-tighter text-on-surface" href="index.html">CERAMIC PRO <span class="text-primary">NZ</span></a>
+    <div class="hidden md:flex gap-8 items-center">
+      <a class="nav-link text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-sm uppercase tracking-widest" href="index.html">Home</a>
+      <a class="nav-link active text-on-surface font-medium hover:text-primary transition-colors duration-300 text-sm uppercase tracking-widest" href="about.html">About</a>
+      <a class="nav-link text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-sm uppercase tracking-widest" href="automotive.html">Automotive</a>
+      <a class="nav-link text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-sm uppercase tracking-widest" href="marine.html">Marine</a>
+      <a class="nav-link text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-sm uppercase tracking-widest" href="contact.html">Contact</a>
+    </div>
+    <a class="hidden md:inline-flex bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded hover:bg-primary-container hover:text-on-primary-container transition-all uppercase tracking-widest" href="contact.html">Get Protected</a>
+    <button id="mobile-menu-toggle" class="md:hidden text-on-surface p-2" aria-label="Open menu"><span class="material-symbols-outlined">menu</span></button>
+  </div>
+  <div id="mobile-menu" class="md:hidden flex-col gap-4 px-margin-mobile py-6 bg-surface border-t border-outline-variant/10">
+    <a class="text-on-surface-variant uppercase tracking-widest text-sm py-2" href="index.html">Home</a>
+    <a class="text-on-surface uppercase tracking-widest text-sm py-2" href="about.html">About</a>
+    <a class="text-on-surface-variant uppercase tracking-widest text-sm py-2" href="automotive.html">Automotive</a>
+    <a class="text-on-surface-variant uppercase tracking-widest text-sm py-2" href="marine.html">Marine</a>
+    <a class="text-on-surface-variant uppercase tracking-widest text-sm py-2" href="contact.html">Contact</a>
+    <a class="bg-primary text-on-primary text-center py-3 uppercase tracking-widest text-sm font-semibold mt-2 rounded" href="contact.html">Get Protected</a>
+  </div>
+</nav>
+
+<header class="relative h-[70vh] min-h-[520px] flex items-center justify-center overflow-hidden pt-20">
+  <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/high-res-car.png">
+    <source src="assets/car-driving.mp4" type="video/mp4" />
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop">
+    <span class="font-label-sm text-label-sm text-primary tracking-[0.2em] uppercase mb-4 block reveal">Engineered for Perfection</span>
+    <h1 class="font-display-lg text-display-lg text-on-surface uppercase mb-6 leading-tight reveal display-resp">
+      About <span class="text-primary text-glow">Ceramic Pro</span>
+    </h1>
+    <p class="max-w-2xl mx-auto font-body-lg text-body-lg text-on-surface-variant reveal">
+      The global leader in nanoceramic coating technology, redefining the standards of protection for high-value assets across Aotearoa.
+    </p>
+  </div>
+</header>
+
+<main>
+  <!-- Mission -->
+  <section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto grid md:grid-cols-2 gap-16 items-center">
+    <div class="space-y-8 reveal">
+      <span class="font-label-sm text-label-sm text-primary-container border-l-4 border-primary-container pl-4 uppercase">Our Mission</span>
+      <h2 class="font-headline-lg text-headline-lg headline-resp">Protecting New Zealand's Environment through <span class="text-primary">Innovation</span></h2>
+      <div class="space-y-4 font-body-lg text-on-surface-variant leading-relaxed">
+        <p>We are fortunate to live in a clean green country, and we want to protect it for the next generation. Preserving the environment is of paramount importance, which is why we welcomed this nanotechnology breakthrough product, Ceramic Pro — the global leader in protective coating technology that complies with international standards.</p>
+        <p>Essentially, Ceramic Pro is a clear solid product that protects against ultraviolet rays and water damage, as well as daily wear and tear. You can apply Ceramic Pro to various surfaces, including cars, boats, aircraft, construction and industrial objects.</p>
+        <p>Ceramic Pro coatings bond to surfaces at a molecular level, filling in any nano-pores and creating a hydrophobic surface that is impervious to contamination. No other product in the world performs quite like this.</p>
+      </div>
+      <div class="flex gap-6 flex-wrap">
+        <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">eco</span><span class="font-label-sm text-label-sm">Eco-Conscious Tech</span></div>
+        <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">workspace_premium</span><span class="font-label-sm text-label-sm">Preserving Aotearoa</span></div>
+      </div>
+    </div>
+    <div class="relative group reveal">
+      <div class="absolute -inset-4 bg-primary-container/10 blur-3xl rounded-full"></div>
+      <img class="relative z-10 obsidian-glass p-2 rounded-lg w-full" src="assets/high-res-car.png" alt="High-gloss ceramic-coated surface" />
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="bg-surface-container-lowest py-section-gap border-y border-outline-variant/10">
+    <div class="px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-gutter">
+      <div class="text-center p-8 md:border-r border-outline-variant/10 reveal">
+        <div class="font-display-lg text-headline-lg text-on-surface mb-2">70+</div>
+        <div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Countries Served</div>
+      </div>
+      <div class="text-center p-8 md:border-r border-outline-variant/10 reveal">
+        <div class="font-display-lg text-headline-lg text-on-surface mb-2">50k+</div>
+        <div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Vehicles &amp; Vessels Coated</div>
+      </div>
+      <div class="text-center p-8 md:border-r border-outline-variant/10 reveal">
+        <div class="font-display-lg text-headline-lg text-on-surface mb-2">$5B+</div>
+        <div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Asset Value Protected</div>
+      </div>
+      <div class="text-center p-8 reveal">
+        <div class="font-display-lg text-headline-lg text-on-surface mb-2">10Y+</div>
+        <div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Research &amp; R&amp;D</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Leader -->
+  <section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+    <div class="text-center mb-16 reveal">
+      <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-4 block">Patented Technology</span>
+      <h2 class="font-headline-lg text-headline-lg mb-6 headline-resp">Global Leader In Nano-Ceramic Coating Technology</h2>
+      <div class="max-w-3xl mx-auto space-y-4 text-on-surface-variant">
+        <p>Ceramic Pro is changing the dynamics of the protective coating industry. For years the company developed industrial protective coatings for automotive, aviation and marine markets — suitable for paint, glass, alloy, fabric, metal, leather, plastic and rubber.</p>
+        <p>What makes Ceramic Pro different is the cutting-edge technology based on ceramic molecule compounds (nano-ceramics). The formula is world-patented and represents ten years of research and testing.</p>
+        <p>All Ceramic Pro products have been tested and certified by SGS — the world's leading inspection, verification and certification entity. Every product within the range is non-toxic.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Bento -->
+  <section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+    <div class="text-center mb-20 reveal">
+      <h2 class="font-headline-lg text-headline-lg uppercase mb-4 headline-resp">Benefits of <span class="text-primary-container">Ceramic Pro</span></h2>
+      <p class="text-on-surface-variant max-w-2xl mx-auto">Multiple layers of molecular protection across a wide range of surfaces.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="obsidian-glass p-10 rounded-lg flex flex-col items-start gap-6 hover:border-primary/40 transition-all reveal">
+        <span class="material-symbols-outlined text-primary text-4xl">verified_user</span>
+        <div><h3 class="font-headline-md text-headline-md mb-2">Permanent Protection</h3><p class="text-on-surface-variant text-sm">Bonds at a molecular level — only removable through abrasion, never chemical attack.</p></div>
+      </div>
+      <div class="obsidian-glass p-10 rounded-lg flex flex-col items-start gap-6 hover:border-primary/40 transition-all reveal">
+        <span class="material-symbols-outlined text-primary text-4xl">diamond</span>
+        <div><h3 class="font-headline-md text-headline-md mb-2">Hardness Above 9H</h3><p class="text-on-surface-variant text-sm">Penetrates clear coats and transforms surface hardness from 3-4H up to 9H+.</p></div>
+      </div>
+      <div class="obsidian-glass p-10 rounded-lg flex flex-col items-start gap-6 hover:border-primary/40 transition-all reveal">
+        <span class="material-symbols-outlined text-primary text-4xl">science</span>
+        <div><h3 class="font-headline-md text-headline-md mb-2">Chemical Resistance</h3><p class="text-on-surface-variant text-sm">100% resistance to damaging contaminants and harsh chemicals encountered daily.</p></div>
+      </div>
+      <div class="obsidian-glass p-10 rounded-lg flex flex-col items-start gap-6 hover:border-primary/40 transition-all reveal">
+        <span class="material-symbols-outlined text-primary text-4xl">water_damage</span>
+        <div><h3 class="font-headline-md text-headline-md mb-2">Oxidation &amp; Corrosion</h3><p class="text-on-surface-variant text-sm">Protects any metal from staining, corrosion, salt and oxidation — including stainless steel.</p></div>
+      </div>
+      <div class="md:col-span-2 obsidian-glass p-10 rounded-lg flex flex-col md:flex-row items-center gap-10 hover:border-primary/40 transition-all reveal">
+        <div class="flex-1">
+          <span class="material-symbols-outlined text-primary text-4xl mb-6 block">wb_sunny</span>
+          <h3 class="font-headline-md text-headline-md mb-2">UV Protection &amp; Temperature Resistance</h3>
+          <p class="text-on-surface-variant text-sm">Block harmful UV rays that fade paintwork and withstand surface temperatures up to 760°C. Ideal for NZ's high UV index and warm coastal climates.</p>
+        </div>
+        <div class="flex-1 overflow-hidden rounded-lg">
+          <img class="w-full h-48 object-cover" src="assets/high-res-car.png" alt="UV-protected paint surface" />
+        </div>
+      </div>
+      <div class="obsidian-glass p-10 rounded-lg flex flex-col items-start gap-6 hover:border-primary/40 transition-all reveal">
+        <span class="material-symbols-outlined text-primary text-4xl">water_drop</span>
+        <div><h3 class="font-headline-md text-headline-md mb-2">Super Hydrophobic</h3><p class="text-on-surface-variant text-sm">Water beads off the surface like a lotus leaf — creating a self-cleaning effect.</p></div>
+      </div>
+      <div class="obsidian-glass p-10 rounded-lg flex flex-col items-start gap-6 hover:border-primary/40 transition-all reveal">
+        <span class="material-symbols-outlined text-primary text-4xl">auto_awesome</span>
+        <div><h3 class="font-headline-md text-headline-md mb-2">Super Gloss</h3><p class="text-on-surface-variant text-sm">A rich, permanent gloss finish that enhances new paintwork and revives faded surfaces.</p></div>
+      </div>
+      <div class="obsidian-glass p-10 rounded-lg flex flex-col items-start gap-6 hover:border-primary/40 transition-all reveal">
+        <span class="material-symbols-outlined text-primary text-4xl">workspace_premium</span>
+        <div><h3 class="font-headline-md text-headline-md mb-2">Tested &amp; Certified</h3><p class="text-on-surface-variant text-sm">SGS-certified worldwide. Achieves the highest score in every paint protection test.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto text-center">
+    <div class="reveal">
+      <h2 class="font-headline-lg text-headline-lg mb-6 headline-resp">Ready for the best ceramic coatings in the world?</h2>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a class="bg-primary text-on-primary font-label-sm px-8 py-4 rounded uppercase tracking-widest hover:bg-primary-container hover:text-on-primary-container transition-all" href="contact.html">Request Free Quote</a>
+        <a class="border border-outline-variant text-on-surface font-label-sm px-8 py-4 rounded uppercase tracking-widest hover:bg-surface-container-highest transition-all" href="contact.html#installer">Become an Installer</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-surface-container-lowest border-t border-outline-variant/10">
+  <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-20 grid grid-cols-1 md:grid-cols-4 gap-12">
+    <div>
+      <div class="font-headline-md text-headline-md font-bold text-on-surface tracking-tighter mb-4">CERAMIC PRO <span class="text-primary">NZ</span></div>
+      <p class="text-on-surface-variant text-sm">The global leader in nanoceramic surface protection — engineered for Aotearoa New Zealand.</p>
+    </div>
+    <div>
+      <h4 class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-4">Industries</h4>
+      <ul class="space-y-3 text-sm">
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="automotive.html">Automotive</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="marine.html">Marine</a></li>
+        <li><span class="text-on-surface-variant/50">Aviation</span></li>
+        <li><span class="text-on-surface-variant/50">Residential</span></li>
+        <li><span class="text-on-surface-variant/50">Commercial</span></li>
+        <li><span class="text-on-surface-variant/50">Signage</span></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-4">Quick Links</h4>
+      <ul class="space-y-3 text-sm">
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="contact.html">Request Free Quote</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="contact.html#installer">Become an Installer</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="about.html">About Us</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors" target="_blank" rel="noopener" href="https://www.instagram.com/ceramicproauckland/">Instagram</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-4">Contact</h4>
+      <ul class="space-y-3 text-sm">
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="mailto:info@ceramic-pro.co.nz">info@ceramic-pro.co.nz</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="tel:+6421908640">+64 21 908 640</a></li>
+      </ul>
+      <p class="text-on-surface-variant text-xs mt-6">Certified by SGS — the world's leading inspection, verification and certification company.</p>
+    </div>
+  </div>
+  <div class="border-t border-outline-variant/10 py-6 text-center">
+    <p class="font-label-sm text-label-sm text-on-surface-variant/60 uppercase tracking-widest">© 2026 Ceramic Pro Ltd. All rights reserved. Engineered for Perfection.</p>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

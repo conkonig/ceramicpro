@@ -1,0 +1,107 @@
+/* Ceramic Pro NZ — shared styles */
+:root {
+  --cp-primary: #ffb0cc;
+  --cp-primary-container: #ff45a1;
+  --cp-on-primary: #640038;
+  --cp-bg: #121317;
+  --cp-surface-lowest: #0d0e12;
+  --cp-surface-low: #1a1b1f;
+  --cp-surface: #1e1f23;
+  --cp-surface-high: #292a2e;
+  --cp-on-surface: #e3e2e7;
+  --cp-on-surface-variant: #e2bdc8;
+  --cp-outline-variant: #5a3f49;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--cp-bg);
+  color: var(--cp-on-surface);
+  -webkit-font-smoothing: antialiased;
+}
+
+.obsidian-glass {
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.8) 0%, rgba(18, 19, 23, 0.9) 100%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(90, 63, 73, 0.3);
+}
+
+.text-glow {
+  text-shadow: 0 0 24px rgba(255, 69, 161, 0.45);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Hero video */
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(180deg, rgba(13,14,18,0.55) 0%, rgba(13,14,18,0.35) 40%, rgba(13,14,18,0.95) 100%),
+    radial-gradient(ellipse at center, rgba(13,14,18,0) 0%, rgba(13,14,18,0.55) 100%);
+}
+
+/* Reveal-on-scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 700ms ease, transform 700ms ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* FAQ accordion */
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+/* Nav active link */
+.nav-link.active {
+  color: var(--cp-primary);
+  border-bottom: 2px solid var(--cp-primary);
+  padding-bottom: 2px;
+}
+
+/* Smooth zoom on hover for cards */
+.card-zoom img {
+  transition: transform 0.7s ease;
+}
+.card-zoom:hover img {
+  transform: scale(1.06);
+}
+
+/* Mobile nav */
+#mobile-menu {
+  display: none;
+}
+#mobile-menu.open {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .display-resp {
+    font-size: 44px !important;
+    line-height: 50px !important;
+  }
+  .headline-resp {
+    font-size: 32px !important;
+    line-height: 38px !important;
+  }
+}

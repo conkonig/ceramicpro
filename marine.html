@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ceramic Pro Marine — Advanced Protection for Harsh Conditions</title>
+<meta name="description" content="Ceramic Pro Marine — the most advanced protective coating for boats, jet skis, trailers, kayaks and surfboards. SGS-verified protection against salt, UV and biological fouling." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23121317'/%3E%3Ctext x='50' y='62' font-family='Arial' font-size='52' font-weight='800' fill='%23ffb0cc' text-anchor='middle'%3ECP%3C/text%3E%3C/svg%3E" />
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "on-surface-variant": "#e2bdc8", "background": "#121317", "surface-bright": "#38393d",
+          "surface-dim": "#121317", "surface-container-highest": "#343539", "surface": "#121317",
+          "secondary-container": "#4a4949", "on-primary": "#640038", "outline-variant": "#5a3f49",
+          "primary": "#ffb0cc", "primary-container": "#ff45a1", "on-primary-container": "#580031",
+          "tertiary": "#c8c6c5", "surface-container": "#1e1f23", "surface-variant": "#343539",
+          "secondary": "#c8c6c5", "outline": "#a98892", "surface-container-high": "#292a2e",
+          "surface-container-low": "#1a1b1f", "surface-container-lowest": "#0d0e12", "on-surface": "#e3e2e7"
+        },
+        borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem" },
+        spacing: { "margin-desktop": "80px", "section-gap": "120px", "gutter": "24px", "margin-mobile": "20px", "unit": "8px" },
+        fontFamily: { "headline-lg": ["Hanken Grotesk"], "display-lg": ["Hanken Grotesk"], "body-md": ["Inter"], "body-lg": ["Inter"], "label-sm": ["JetBrains Mono"], "headline-md": ["Hanken Grotesk"] },
+        fontSize: {
+          "headline-lg": ["48px", { lineHeight: "56px", letterSpacing: "-0.01em", fontWeight: "700" }],
+          "display-lg": ["72px", { lineHeight: "80px", letterSpacing: "-0.02em", fontWeight: "800" }],
+          "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+          "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+          "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "500" }],
+          "headline-md": ["32px", { lineHeight: "40px", fontWeight: "600" }]
+        }
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="assets/site.css" />
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased">
+
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/10">
+  <div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+    <a class="font-headline-md text-headline-md font-bold tracking-tighter text-on-surface" href="index.html">CERAMIC PRO <span class="text-primary">NZ</span></a>
+    <div class="hidden md:flex gap-8 items-center">
+      <a class="nav-link text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-sm uppercase tracking-widest" href="index.html">Home</a>
+      <a class="nav-link text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-sm uppercase tracking-widest" href="about.html">About</a>
+      <a class="nav-link text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-sm uppercase tracking-widest" href="automotive.html">Automotive</a>
+      <a class="nav-link active text-on-surface font-medium hover:text-primary transition-colors duration-300 text-sm uppercase tracking-widest" href="marine.html">Marine</a>
+      <a class="nav-link text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-sm uppercase tracking-widest" href="contact.html">Contact</a>
+    </div>
+    <a class="hidden md:inline-flex bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded hover:bg-primary-container hover:text-on-primary-container transition-all uppercase tracking-widest" href="contact.html">Get Protected</a>
+    <button id="mobile-menu-toggle" class="md:hidden text-on-surface p-2" aria-label="Open menu"><span class="material-symbols-outlined">menu</span></button>
+  </div>
+  <div id="mobile-menu" class="md:hidden flex-col gap-4 px-margin-mobile py-6 bg-surface border-t border-outline-variant/10">
+    <a class="text-on-surface-variant uppercase tracking-widest text-sm py-2" href="index.html">Home</a>
+    <a class="text-on-surface-variant uppercase tracking-widest text-sm py-2" href="about.html">About</a>
+    <a class="text-on-surface-variant uppercase tracking-widest text-sm py-2" href="automotive.html">Automotive</a>
+    <a class="text-on-surface uppercase tracking-widest text-sm py-2" href="marine.html">Marine</a>
+    <a class="text-on-surface-variant uppercase tracking-widest text-sm py-2" href="contact.html">Contact</a>
+    <a class="bg-primary text-on-primary text-center py-3 uppercase tracking-widest text-sm font-semibold mt-2 rounded" href="contact.html">Get Protected</a>
+  </div>
+</nav>
+
+<!-- Hero (no video on marine — gradient hero) -->
+<header class="relative h-[80vh] min-h-[600px] flex items-center overflow-hidden pt-20">
+  <div class="absolute inset-0 z-0 bg-gradient-to-br from-[#0d0e12] via-[#1a1b1f] to-[#1e1f23]"></div>
+  <div class="absolute inset-0 z-0 opacity-30" style="background-image: radial-gradient(circle at 20% 50%, rgba(255,176,204,0.15) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255,69,161,0.1) 0%, transparent 50%);"></div>
+  <div class="absolute inset-0 z-[1] flex items-center justify-end opacity-30 pointer-events-none">
+    <span class="material-symbols-outlined text-primary/40" style="font-size: 480px;">directions_boat</span>
+  </div>
+
+  <div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto w-full">
+    <div class="max-w-3xl">
+      <span class="font-label-sm text-label-sm uppercase tracking-[0.3em] text-primary mb-4 block reveal">Marine Grade Nanotechnology</span>
+      <h1 class="font-display-lg text-[48px] md:text-display-lg mb-6 leading-tight reveal display-resp">The most advanced protective <span class="text-primary text-glow">coating for the marine industry.</span></h1>
+      <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl reveal">
+        Engineered to withstand the world's most corrosive environments. Our coatings create a permanent, high-gloss barrier against salt water, UV rays and biological fouling.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 reveal">
+        <a class="bg-primary text-on-primary font-label-sm px-8 py-4 rounded uppercase tracking-widest hover:bg-primary-container hover:text-on-primary-container transition-all text-center" href="contact.html">Request Free Quote</a>
+        <a class="border border-outline-variant text-on-surface font-label-sm px-8 py-4 rounded uppercase tracking-widest hover:bg-surface-container-high transition-all text-center" href="tel:+6421908640">Call +64 21 908 640</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Challenges -->
+  <section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div class="space-y-8 reveal">
+        <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest border-l-2 border-primary pl-3 inline-block">The Challenge</span>
+        <h2 class="font-headline-lg text-headline-lg headline-resp">The unrelenting marine environment</h2>
+        <p class="font-body-lg text-on-surface-variant">Salt water, UV and biological fouling are the greatest enemies of any vessel. Without protection, gelcoat becomes porous, chalky and susceptible to permanent damage. Ceramic Pro Marine is the world's first all-inclusive protective and preventative maintenance product, specially designed for professionals.</p>
+        <div class="space-y-6">
+          <div class="flex gap-4 items-start">
+            <span class="material-symbols-outlined text-primary text-3xl">wb_sunny</span>
+            <div>
+              <h4 class="font-headline-md text-[20px] mb-1">Higher UV Exposure</h4>
+              <p class="text-on-surface-variant text-sm">UV is amplified by water reflection — far more intense than what your car experiences.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="material-symbols-outlined text-primary text-3xl">water_drop</span>
+            <div>
+              <h4 class="font-headline-md text-[20px] mb-1">Waterline Staining</h4>
+              <p class="text-on-surface-variant text-sm">Marine scum, dock rash and exhaust emissions damage the surface and look unsightly.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="material-symbols-outlined text-primary text-3xl">visibility</span>
+            <div>
+              <h4 class="font-headline-md text-[20px] mb-1">Glass &amp; Acrylic Windscreens</h4>
+              <p class="text-on-surface-variant text-sm">Salt staining and hazy swirl marks reduce clarity — a hazard during sunstrike and night vision.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="obsidian-glass rounded-lg p-10 space-y-6 reveal">
+        <h3 class="font-headline-md text-[24px] mb-2">Wax &amp; polymer sealants fall short</h3>
+        <div class="space-y-4 text-on-surface-variant text-sm">
+          <p><strong class="text-on-surface">Wax</strong> offers protection that lasts 3–6 months and can eventually react with the gelcoat causing chalking and fading.</p>
+          <p><strong class="text-on-surface">Polymer sealants</strong> last 8 months to a year, help with UV damage, but will still break down and lose shine.</p>
+          <p><strong class="text-on-surface">Ceramic Pro Marine</strong> bonds permanently — once cured, it cannot be washed away or chemically removed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Ceramic Pro Marine -->
+  <section class="bg-surface-container-lowest py-section-gap border-y border-outline-variant/10">
+    <div class="px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+      <div class="text-center mb-20 reveal">
+        <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-4 block">Why Ceramic Pro Marine?</span>
+        <h2 class="font-headline-lg text-headline-lg mb-4 headline-resp">Unrivaled protection. Effortless maintenance.</h2>
+        <p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">Transform how you care for your vessel.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="obsidian-glass rounded-lg p-10 flex flex-col items-center text-center space-y-6 reveal">
+          <div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">auto_fix_high</span>
+          </div>
+          <h3 class="font-headline-md text-headline-md">Surface Rejuvenation</h3>
+          <p class="text-on-surface-variant text-sm">Preserves and protects faded paints and gelcoat, creating a permanent glass shield that seals micropores.</p>
+        </div>
+        <div class="obsidian-glass rounded-lg p-10 flex flex-col items-center text-center space-y-6 reveal">
+          <div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">shield</span>
+          </div>
+          <h3 class="font-headline-md text-headline-md">Total Protection</h3>
+          <p class="text-on-surface-variant text-sm">Protects against oxidation, corrosion, soot, harmful UV, acid rain, calcium and salt deposits.</p>
+        </div>
+        <div class="obsidian-glass rounded-lg p-10 flex flex-col items-center text-center space-y-6 reveal">
+          <div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">flare</span>
+          </div>
+          <h3 class="font-headline-md text-headline-md">High-Gloss Finish</h3>
+          <p class="text-on-surface-variant text-sm">A finish that exceeds OEM paint or gelcoat — glossier than the day you bought it.</p>
+        </div>
+        <div class="obsidian-glass rounded-lg p-10 flex flex-col items-center text-center space-y-6 reveal">
+          <div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">timer</span>
+          </div>
+          <h3 class="font-headline-md text-headline-md">5-Year Durability</h3>
+          <p class="text-on-surface-variant text-sm">A 5-year proven lifespan — longer than any wax or sealant on the market.</p>
+        </div>
+        <div class="obsidian-glass rounded-lg p-10 flex flex-col items-center text-center space-y-6 reveal">
+          <div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">interests</span>
+          </div>
+          <h3 class="font-headline-md text-headline-md">Versatility</h3>
+          <p class="text-on-surface-variant text-sm">Glass, alloy, gelcoat, brightwork, stainless, masts, booms, railings, clears, vinyl decals — every surface.</p>
+        </div>
+        <div class="obsidian-glass rounded-lg p-10 flex flex-col items-center text-center space-y-6 reveal">
+          <div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">cleaning_services</span>
+          </div>
+          <h3 class="font-headline-md text-headline-md">Easy Cleaning</h3>
+          <p class="text-on-surface-variant text-sm">Superhydrophobic surface — just hose down with water. Eliminate damaging chemicals and compounds.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marine Categories -->
+  <section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+    <div class="text-center mb-16 reveal">
+      <h2 class="font-headline-lg text-headline-lg mb-4 headline-resp">Total Protection Ecosystem</h2>
+      <p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">From luxury yachts to surfboards, dive gear and fishing equipment.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+      <article class="obsidian-glass rounded-lg overflow-hidden reveal">
+        <div class="h-48 bg-gradient-to-br from-surface-container to-surface-container-highest flex items-center justify-center">
+          <span class="material-symbols-outlined text-primary/50" style="font-size: 96px;">sailing</span>
+        </div>
+        <div class="p-8">
+          <h3 class="font-headline-md text-[22px] mb-3">Boats &amp; Yachts</h3>
+          <p class="text-on-surface-variant text-sm mb-6">Protection above and below the water. Increases speed and fuel efficiency by reducing drag. We offer a minimum 3-year guarantee for any coating above the waterline.</p>
+          <a class="block text-center w-full border border-outline text-on-surface font-label-sm py-3 rounded uppercase tracking-widest hover:bg-primary hover:text-on-primary hover:border-primary transition-all" href="contact.html">Request Quote</a>
+        </div>
+      </article>
+      <article class="obsidian-glass rounded-lg overflow-hidden reveal">
+        <div class="h-48 bg-gradient-to-br from-surface-container to-surface-container-highest flex items-center justify-center">
+          <span class="material-symbols-outlined text-primary/50" style="font-size: 96px;">surfing</span>
+        </div>
+        <div class="p-8">
+          <h3 class="font-headline-md text-[22px] mb-3">Jet Skis</h3>
+          <p class="text-on-surface-variant text-sm mb-6">Protects your hull from rocky pull-ups, the sand-launch scrape, tow ropes through gelcoat and other recreational damage.</p>
+          <a class="block text-center w-full border border-outline text-on-surface font-label-sm py-3 rounded uppercase tracking-widest hover:bg-primary hover:text-on-primary hover:border-primary transition-all" href="contact.html">Request Quote</a>
+        </div>
+      </article>
+      <article class="obsidian-glass rounded-lg overflow-hidden reveal">
+        <div class="h-48 bg-gradient-to-br from-surface-container to-surface-container-highest flex items-center justify-center">
+          <span class="material-symbols-outlined text-primary/50" style="font-size: 96px;">commute</span>
+        </div>
+        <div class="p-8">
+          <h3 class="font-headline-md text-[22px] mb-3">Trailers</h3>
+          <p class="text-on-surface-variant text-sm mb-6">Salt water attacks galvanised surfaces. Our protective coating provides UV and water protection, retaining a brand-new look for years.</p>
+          <a class="block text-center w-full border border-outline text-on-surface font-label-sm py-3 rounded uppercase tracking-widest hover:bg-primary hover:text-on-primary hover:border-primary transition-all" href="contact.html">Request Quote</a>
+        </div>
+      </article>
+      <article class="obsidian-glass rounded-lg overflow-hidden reveal">
+        <div class="h-48 bg-gradient-to-br from-surface-container to-surface-container-highest flex items-center justify-center">
+          <span class="material-symbols-outlined text-primary/50" style="font-size: 96px;">kayaking</span>
+        </div>
+        <div class="p-8">
+          <h3 class="font-headline-md text-[22px] mb-3">Kayaks</h3>
+          <p class="text-on-surface-variant text-sm mb-6">Every clean and polish breaks down the surface. Our advanced nano-ceramic technology contains self-cleaning attributes — water rolls dirt away.</p>
+          <a class="block text-center w-full border border-outline text-on-surface font-label-sm py-3 rounded uppercase tracking-widest hover:bg-primary hover:text-on-primary hover:border-primary transition-all" href="contact.html">Request Quote</a>
+        </div>
+      </article>
+      <article class="obsidian-glass rounded-lg overflow-hidden reveal">
+        <div class="h-48 bg-gradient-to-br from-surface-container to-surface-container-highest flex items-center justify-center">
+          <span class="material-symbols-outlined text-primary/50" style="font-size: 96px;">pool</span>
+        </div>
+        <div class="p-8">
+          <h3 class="font-headline-md text-[22px] mb-3">Surfboards</h3>
+          <p class="text-on-surface-variant text-sm mb-6">Once applied, the surface becomes a rigid, super-slick glass shield — no need for any other protective products.</p>
+          <a class="block text-center w-full border border-outline text-on-surface font-label-sm py-3 rounded uppercase tracking-widest hover:bg-primary hover:text-on-primary hover:border-primary transition-all" href="contact.html">Request Quote</a>
+        </div>
+      </article>
+      <article class="obsidian-glass rounded-lg overflow-hidden reveal">
+        <div class="h-48 bg-gradient-to-br from-surface-container to-surface-container-highest flex items-center justify-center">
+          <span class="material-symbols-outlined text-primary/50" style="font-size: 96px;">scuba_diving</span>
+        </div>
+        <div class="p-8">
+          <h3 class="font-headline-md text-[22px] mb-3">Dive &amp; Fishing Gear</h3>
+          <p class="text-on-surface-variant text-sm mb-6">Advanced nanotechnology repels harsh underwater elements, preventing damage and extending equipment life.</p>
+          <a class="block text-center w-full border border-outline text-on-surface font-label-sm py-3 rounded uppercase tracking-widest hover:bg-primary hover:text-on-primary hover:border-primary transition-all" href="contact.html">Request Quote</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-section-gap bg-surface-container-low border-t border-outline-variant/10">
+    <div class="px-margin-mobile md:px-margin-desktop max-w-4xl mx-auto">
+      <div class="text-center mb-16 reveal">
+        <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-3 block">Knowledge Base</span>
+        <h2 class="font-headline-lg text-headline-lg mb-2 headline-resp">Frequently Asked Questions</h2>
+      </div>
+      <div class="space-y-4">
+
+        <div class="obsidian-glass rounded-lg overflow-hidden reveal">
+          <button data-faq-toggle class="w-full p-6 text-left flex justify-between items-center hover:bg-surface-container-high transition-colors">
+            <span class="font-headline-md text-[18px]">Is Ceramic Pro Marine safe for my paint or gelcoat?</span>
+            <span class="material-symbols-outlined transition-transform">expand_more</span>
+          </button>
+          <div class="faq-content">
+            <div class="p-6 pt-0 text-on-surface-variant text-sm">Yes. Ceramic Pro Marine is formulated to be safe for all surfaces, including your gelcoat or paint. It will not damage your gelcoat or paintwork and will not void any manufacturer warranties.</div>
+          </div>
+        </div>
+
+        <div class="obsidian-glass rounded-lg overflow-hidden reveal">
+          <button data-faq-toggle class="w-full p-6 text-left flex justify-between items-center hover:bg-surface-container-high transition-colors">
+            <span class="font-headline-md text-[18px]">Does Ceramic Pro Marine crack, peel or yellow?</span>
+            <span class="material-symbols-outlined transition-transform">expand_more</span>
+          </button>
+          <div class="faq-content">
+            <div class="p-6 pt-0 text-on-surface-variant text-sm">No. Our products have undergone SGS testing and real-life testing in some of the world's harshest environments — and surpassed every one of them.</div>
+          </div>
+        </div>
+
+        <div class="obsidian-glass rounded-lg overflow-hidden reveal">
+          <button data-faq-toggle class="w-full p-6 text-left flex justify-between items-center hover:bg-surface-container-high transition-colors">
+            <span class="font-headline-md text-[18px]">Is Ceramic Pro an alternative to anti-fouling paint?</span>
+            <span class="material-symbols-outlined transition-transform">expand_more</span>
+          </button>
+          <div class="faq-content">
+            <div class="p-6 pt-0 text-on-surface-variant text-sm">Yes. Ceramic Pro Marine acts as a fouling release below the waterline by sealing the pores of your gelcoat or paint — making removal an effortless task. Our products are environmentally safe with no leeching into the water.</div>
+          </div>
+        </div>
+
+        <div class="obsidian-glass rounded-lg overflow-hidden reveal">
+          <button data-faq-toggle class="w-full p-6 text-left flex justify-between items-center hover:bg-surface-container-high transition-colors">
+            <span class="font-headline-md text-[18px]">Can I apply Ceramic Pro Marine products myself?</span>
+            <span class="material-symbols-outlined transition-transform">expand_more</span>
+          </button>
+          <div class="faq-content">
+            <div class="p-6 pt-0 text-on-surface-variant text-sm">No. Ceramic Pro Marine must be applied by trained and certified professionals. The product requires strong attention to detail and an understanding of how solvent-based coatings work.</div>
+          </div>
+        </div>
+
+        <div class="obsidian-glass rounded-lg overflow-hidden reveal">
+          <button data-faq-toggle class="w-full p-6 text-left flex justify-between items-center hover:bg-surface-container-high transition-colors">
+            <span class="font-headline-md text-[18px]">How long will Ceramic Pro Marine last?</span>
+            <span class="material-symbols-outlined transition-transform">expand_more</span>
+          </button>
+          <div class="faq-content">
+            <div class="p-6 pt-0 text-on-surface-variant text-sm">Ceramic Pro Marine has a 5-year proven lifespan — longer than any wax or sealant on the market.</div>
+          </div>
+        </div>
+
+        <div class="obsidian-glass rounded-lg overflow-hidden reveal">
+          <button data-faq-toggle class="w-full p-6 text-left flex justify-between items-center hover:bg-surface-container-high transition-colors">
+            <span class="font-headline-md text-[18px]">Do I still have to use a bunch of chemicals to clean and maintain my boat?</span>
+            <span class="material-symbols-outlined transition-transform">expand_more</span>
+          </button>
+          <div class="faq-content">
+            <div class="p-6 pt-0 text-on-surface-variant text-sm">No. Water and a mild boat or dish soap will do the trick. Goodbye bleaches, glass cleaners, vinyl cleaners and metal polishes.</div>
+          </div>
+        </div>
+
+        <div class="obsidian-glass rounded-lg overflow-hidden reveal">
+          <button data-faq-toggle class="w-full p-6 text-left flex justify-between items-center hover:bg-surface-container-high transition-colors">
+            <span class="font-headline-md text-[18px]">Can I use a pressure washer to clean my boat?</span>
+            <span class="material-symbols-outlined transition-transform">expand_more</span>
+          </button>
+          <div class="faq-content">
+            <div class="p-6 pt-0 text-on-surface-variant text-sm">Yes. Ceramic Pro Marine products are exceptionally durable and can withstand high-psi pressure washers.</div>
+          </div>
+        </div>
+
+        <div class="obsidian-glass rounded-lg overflow-hidden reveal">
+          <button data-faq-toggle class="w-full p-6 text-left flex justify-between items-center hover:bg-surface-container-high transition-colors">
+            <span class="font-headline-md text-[18px]">What packages are available?</span>
+            <span class="material-symbols-outlined transition-transform">expand_more</span>
+          </button>
+          <div class="faq-content">
+            <div class="p-6 pt-0 text-on-surface-variant text-sm">Tailored to fit all budgets — a simple Sport package for great protection and a low entry cost, Silver or Silver Plus for more protection and layering, and the Marine Gold package for ultimate above-waterline protection with up to a 5-year warranty.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto text-center">
+    <div class="reveal">
+      <h2 class="font-headline-lg text-headline-lg mb-6 headline-resp">Ready to protect your vessel?</h2>
+      <p class="text-on-surface-variant font-body-lg mb-10 max-w-2xl mx-auto">Talk to a Ceramic Pro NZ certified marine installer about a custom protection package.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a class="bg-primary text-on-primary font-label-sm px-8 py-4 rounded uppercase tracking-widest hover:bg-primary-container hover:text-on-primary-container transition-all" href="contact.html">Request Free Quote</a>
+        <a class="border border-outline-variant text-on-surface font-label-sm px-8 py-4 rounded uppercase tracking-widest hover:bg-surface-container-high transition-all" href="tel:+6421908640">Make a Phone Call</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-surface-container-lowest border-t border-outline-variant/10">
+  <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-20 grid grid-cols-1 md:grid-cols-4 gap-12">
+    <div>
+      <div class="font-headline-md text-headline-md font-bold text-on-surface tracking-tighter mb-4">CERAMIC PRO <span class="text-primary">NZ</span></div>
+      <p class="text-on-surface-variant text-sm">The global leader in nanoceramic surface protection — engineered for Aotearoa New Zealand.</p>
+    </div>
+    <div>
+      <h4 class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-4">Industries</h4>
+      <ul class="space-y-3 text-sm">
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="automotive.html">Automotive</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="marine.html">Marine</a></li>
+        <li><span class="text-on-surface-variant/50">Aviation</span></li>
+        <li><span class="text-on-surface-variant/50">Residential</span></li>
+        <li><span class="text-on-surface-variant/50">Commercial</span></li>
+        <li><span class="text-on-surface-variant/50">Signage</span></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-4">Quick Links</h4>
+      <ul class="space-y-3 text-sm">
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="contact.html">Request Free Quote</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="contact.html#installer">Become an Installer</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="about.html">About Us</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors" target="_blank" rel="noopener" href="https://www.instagram.com/ceramicproauckland/">Instagram</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-4">Contact</h4>
+      <ul class="space-y-3 text-sm">
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="mailto:info@ceramic-pro.co.nz">info@ceramic-pro.co.nz</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="tel:+6421908640">+64 21 908 640</a></li>
+      </ul>
+      <p class="text-on-surface-variant text-xs mt-6">Certified by SGS — the world's leading inspection, verification and certification company.</p>
+    </div>
+  </div>
+  <div class="border-t border-outline-variant/10 py-6 text-center">
+    <p class="font-label-sm text-label-sm text-on-surface-variant/60 uppercase tracking-widest">© 2026 Ceramic Pro Ltd. All rights reserved. Engineered for Perfection.</p>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
