@@ -24,8 +24,8 @@
           "secondary-container": "#4a4949",
           "on-primary": "#640038",
           "outline-variant": "#5a3f49",
-          "primary": "#ffb0cc",
-          "primary-container": "#ff45a1",
+          "primary": "#ff85c4",
+          "primary-container": "#e00e82",
           "on-primary-container": "#580031",
           "tertiary": "#c8c6c5",
           "surface-container": "#1e1f23",
@@ -67,7 +67,7 @@
 <nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/10">
   <div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
     <a class="flex items-center gap-3" href="index.html" aria-label="Ceramic Pro NZ home">
-      <img src="assets/cp-logo.webp" alt="Ceramic Pro" class="h-10 w-auto" />
+      <img src="assets/cp-logo-white.webp" alt="Ceramic Pro" class="h-10 w-auto" />
       <span class="font-headline-md text-headline-md font-bold tracking-tighter text-on-surface">CERAMIC PRO <span class="text-primary">NZ</span></span>
     </a>
     <div class="hidden md:flex gap-8 items-center">
@@ -77,7 +77,7 @@
       <a class="nav-link text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-sm uppercase tracking-widest" href="marine.html">Marine</a>
       <a class="nav-link text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-sm uppercase tracking-widest" href="contact.html">Contact</a>
     </div>
-    <a class="hidden md:inline-flex bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded hover:bg-primary-container hover:text-on-primary-container transition-all uppercase tracking-widest shadow-[0_0_15px_rgba(255,176,204,0.3)]" href="contact.html">Get Protected</a>
+    <a class="hidden md:inline-flex bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded hover:bg-primary-container hover:text-on-primary-container transition-all uppercase tracking-widest shadow-[0_0_15px_rgba(255,133,196,0.3)]" href="contact.html">Get Protected</a>
     <button id="mobile-menu-toggle" class="md:hidden text-on-surface p-2" aria-label="Open menu">
       <span class="material-symbols-outlined">menu</span>
     </button>
@@ -114,7 +114,7 @@
         Engineered to protect your investments and preserve New Zealand's natural environment. The ultimate surface protection solution for the next generation.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center items-center reveal">
-        <a class="w-full sm:w-auto bg-primary text-on-primary font-label-sm text-label-sm px-8 py-4 rounded hover:bg-primary-container hover:text-on-primary-container transition-all uppercase tracking-widest shadow-[0_0_20px_rgba(255,176,204,0.4)]" href="contact.html">
+        <a class="w-full sm:w-auto bg-primary text-on-primary font-label-sm text-label-sm px-8 py-4 rounded hover:bg-primary-container hover:text-on-primary-container transition-all uppercase tracking-widest shadow-[0_0_20px_rgba(255,133,196,0.4)]" href="contact.html">
           Request Free Quote
         </a>
         <a class="w-full sm:w-auto border border-outline-variant text-on-surface font-label-sm text-label-sm px-8 py-4 rounded hover:bg-surface-container-highest transition-all uppercase tracking-widest bg-surface/50 backdrop-blur-sm" href="contact.html#installer">
@@ -170,7 +170,7 @@
       </div>
 
       <div class="relative rounded-xl overflow-hidden border border-outline-variant/30 aspect-square reveal">
-        <img src="assets/high-res-car.png" alt="Ceramic-Pro coated vehicle close-up" class="w-full h-full object-cover" />
+        <img src="assets/Ceramic-Pro-Coatings.jpg.webp" alt="Hydrophobic ceramic-coated surface — water beads off like a lotus leaf" class="w-full h-full object-cover" />
         <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
         <div class="absolute bottom-8 left-8 right-8">
           <div class="bg-surface-container/80 backdrop-blur-md p-6 rounded-lg border border-outline-variant/30">
@@ -179,6 +179,15 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Parallax: Porsche GT3 RS -->
+  <section class="parallax-band reveal" style="background-image: url('assets/Ceramic-Pro-Porsche-GT3-RS-1.jpg.webp');" aria-label="Porsche GT3 RS protected with Ceramic Pro">
+    <div class="parallax-inner">
+      <span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.3em] border-l-2 border-primary pl-4">Performance Protected</span>
+      <h2 class="font-headline-lg text-headline-lg mt-6 headline-resp text-on-surface">Engineered for the cars that demand more.</h2>
+      <p class="font-body-lg text-body-lg text-on-surface-variant mt-6 max-w-2xl mx-auto">From track-day Porsches to weekend daily-drivers — a permanent nanoceramic shield against UV, swirls, bird etch and the salty Aotearoa coastline.</p>
     </div>
   </section>
 
@@ -202,7 +211,7 @@
         </a>
 
         <a class="card-zoom group relative rounded-xl overflow-hidden border border-outline-variant/20 bg-surface-container block aspect-[4/3] reveal" href="marine.html">
-          <img class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" src="assets/Ceramic-Pro-For-Marine-Industry-1.jpg" alt="Marine ceramic coating" />
+          <img class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" src="assets/marine-hi-res.png" alt="Marine ceramic coating" />
           <div class="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent pointer-events-none"></div>
           <div class="absolute bottom-6 left-6 right-6 flex items-center justify-between">
             <h3 class="font-headline-md text-[24px] text-on-surface tracking-wide uppercase">Marine</h3>
@@ -249,13 +258,22 @@
     </div>
   </section>
 
+  <!-- Parallax: Ferrari LaFerrari -->
+  <section class="parallax-band reveal" style="background-image: url('assets/Ceramic-Pro-Ferrari-LaFerrari-1.jpg');" aria-label="Ferrari LaFerrari protected with Ceramic Pro">
+    <div class="parallax-inner">
+      <span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.3em] border-l-2 border-primary pl-4">Hypercar-Grade Finish</span>
+      <h2 class="font-headline-lg text-headline-lg mt-6 headline-resp text-on-surface">A finish worthy of the world's most exclusive paint.</h2>
+      <p class="font-body-lg text-body-lg text-on-surface-variant mt-6 max-w-2xl mx-auto">Trusted on hypercars worldwide — Ceramic Pro forms a 9H-hard shield that bonds at the molecular level, preserving show-car gloss for years.</p>
+    </div>
+  </section>
+
   <!-- SGS Certification -->
   <section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
     <div class="bg-surface-container-high rounded-xl p-8 md:p-16 border border-outline-variant/20 relative overflow-hidden reveal">
       <div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -mr-20 -mt-20"></div>
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
         <div class="lg:col-span-4 flex justify-center lg:justify-start">
-          <div class="w-48 h-48 bg-surface-container-lowest rounded-full flex items-center justify-center border border-outline-variant/30 shadow-[0_0_30px_rgba(255,176,204,0.05)]">
+          <div class="w-48 h-48 bg-surface-container-lowest rounded-full flex items-center justify-center border border-outline-variant/30 shadow-[0_0_30px_rgba(255,133,196,0.05)]">
             <span class="font-display-lg text-4xl text-on-surface font-bold tracking-tighter">SGS</span>
           </div>
         </div>
@@ -290,7 +308,7 @@
 <footer class="bg-surface-container-lowest border-t border-outline-variant/10">
   <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-20 grid grid-cols-1 md:grid-cols-4 gap-12">
     <div>
-      <img src="assets/cp-logo.webp" alt="Ceramic Pro" class="h-12 w-auto mb-4" />
+      <img src="assets/cp-logo-white.webp" alt="Ceramic Pro" class="h-12 w-auto mb-4" />
       <p class="text-on-surface-variant text-sm">The global leader in nanoceramic surface protection — engineered for Aotearoa New Zealand.</p>
     </div>
     <div>

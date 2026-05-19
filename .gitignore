@@ -1,0 +1,4 @@
+.DS_Store
+# Source 3D model archives — not needed in production
+# (the converted GLB lives in assets/3d/)
+assets/*.rar

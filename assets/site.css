@@ -1,7 +1,7 @@
 /* Ceramic Pro NZ — shared styles */
 :root {
-  --cp-primary: #ffb0cc;
-  --cp-primary-container: #ff45a1;
+  --cp-primary: #ff85c4;
+  --cp-primary-container: #e00e82;
   --cp-on-primary: #640038;
   --cp-bg: #121317;
   --cp-surface-lowest: #0d0e12;
@@ -29,7 +29,7 @@ body {
 }
 
 .text-glow {
-  text-shadow: 0 0 24px rgba(255, 69, 161, 0.45);
+  text-shadow: 0 0 24px rgba(224, 14, 130, 0.45);
 }
 
 .material-symbols-outlined {
@@ -95,6 +95,37 @@ body {
   display: flex;
 }
 
+/* Full-width parallax band */
+.parallax-band {
+  position: relative;
+  width: 100%;
+  min-height: 520px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.parallax-band::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(13,14,18,0.7) 0%, rgba(13,14,18,0.35) 40%, rgba(13,14,18,0.85) 100%),
+    radial-gradient(ellipse at center, rgba(224,14,130,0.08) 0%, transparent 70%);
+  z-index: 1;
+}
+.parallax-band > .parallax-inner {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 80px 24px;
+  max-width: 900px;
+}
+
 @media (max-width: 768px) {
   .display-resp {
     font-size: 44px !important;
@@ -103,5 +134,10 @@ body {
   .headline-resp {
     font-size: 32px !important;
     line-height: 38px !important;
+  }
+  /* iOS Safari does not honor fixed attachment cleanly; fall back to scroll. */
+  .parallax-band {
+    background-attachment: scroll;
+    min-height: 380px;
   }
 }

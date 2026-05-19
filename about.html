@@ -18,7 +18,7 @@
           "on-surface-variant": "#e2bdc8", "background": "#121317", "surface-bright": "#38393d",
           "surface-dim": "#121317", "surface-container-highest": "#343539", "surface": "#121317",
           "secondary-container": "#4a4949", "on-primary": "#640038", "outline-variant": "#5a3f49",
-          "primary": "#ffb0cc", "primary-container": "#ff45a1", "on-primary-container": "#580031",
+          "primary": "#ff85c4", "primary-container": "#e00e82", "on-primary-container": "#580031",
           "tertiary": "#c8c6c5", "surface-container": "#1e1f23", "surface-variant": "#343539",
           "secondary": "#c8c6c5", "outline": "#a98892", "surface-container-high": "#292a2e",
           "surface-container-low": "#1a1b1f", "surface-container-lowest": "#0d0e12", "on-surface": "#e3e2e7"
@@ -45,7 +45,7 @@
 <nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/10">
   <div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
     <a class="flex items-center gap-3" href="index.html" aria-label="Ceramic Pro NZ home">
-      <img src="assets/cp-logo.webp" alt="Ceramic Pro" class="h-10 w-auto" />
+      <img src="assets/cp-logo-white.webp" alt="Ceramic Pro" class="h-10 w-auto" />
       <span class="font-headline-md text-headline-md font-bold tracking-tighter text-on-surface">CERAMIC PRO <span class="text-primary">NZ</span></span>
     </a>
     <div class="hidden md:flex gap-8 items-center">
@@ -73,7 +73,7 @@
   <div class="absolute inset-0 bg-gradient-to-br from-[#0d0e12] via-[#121317] to-[#1a1b1f]"></div>
   <!-- Abstract molecular dot grid -->
   <div class="absolute inset-0 opacity-[0.18]" aria-hidden="true"
-       style="background-image: radial-gradient(rgba(255,176,204,0.6) 1px, transparent 1.2px); background-size: 24px 24px;"></div>
+       style="background-image: radial-gradient(rgba(255,133,196,0.6) 1px, transparent 1.2px); background-size: 24px 24px;"></div>
   <!-- Glowing orbs -->
   <div class="absolute -top-32 -left-32 w-[520px] h-[520px] bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
   <div class="absolute -bottom-40 -right-20 w-[640px] h-[640px] bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -125,7 +125,7 @@
     </div>
     <div class="relative group reveal">
       <div class="absolute -inset-4 bg-primary-container/10 blur-3xl rounded-full"></div>
-      <img class="relative z-10 obsidian-glass p-2 rounded-lg w-full" src="assets/high-res-car.png" alt="High-gloss ceramic-coated surface" />
+      <div id="car-viewer" class="relative z-10 obsidian-glass p-2 rounded-lg w-full aspect-[4/3] overflow-hidden" aria-label="Interactive 3D Audi R8 showcase — move your mouse"></div>
     </div>
   </section>
 
@@ -160,6 +160,31 @@
         <p>Ceramic Pro is changing the dynamics of the protective coating industry. For years the company developed industrial protective coatings for automotive, aviation and marine markets — suitable for paint, glass, alloy, fabric, metal, leather, plastic and rubber.</p>
         <p>What makes Ceramic Pro different is the cutting-edge technology based on ceramic molecule compounds (nano-ceramics). The formula is world-patented and represents ten years of research and testing.</p>
         <p>All Ceramic Pro products have been tested and certified by SGS — the world's leading inspection, verification and certification entity. Every product within the range is non-toxic.</p>
+      </div>
+    </div>
+    <div class="relative reveal mt-12">
+      <div class="absolute -inset-8 bg-primary-container/10 blur-3xl rounded-full pointer-events-none"></div>
+      <img class="relative z-10 w-full max-w-5xl mx-auto rounded-lg obsidian-glass p-2" src="assets/Ceramic-Pro-Worlwide-1280x738.jpg" alt="Ceramic Pro worldwide — installer network across 70+ countries" loading="lazy" />
+      <p class="relative z-10 text-center text-on-surface-variant text-sm mt-4 font-label-sm uppercase tracking-widest">Certified Installer Network · 70+ Countries</p>
+    </div>
+  </section>
+
+  <!-- Hydrophobic Showcase -->
+  <section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto grid md:grid-cols-2 gap-16 items-center">
+    <div class="relative reveal order-2 md:order-1">
+      <div class="absolute -inset-6 bg-primary-container/15 blur-3xl rounded-full pointer-events-none"></div>
+      <img class="relative z-10 obsidian-glass p-2 rounded-lg w-full" src="assets/Ceramic-Pro-Coatings.jpg.webp" alt="Hydrophobic ceramic-coated surface — water beads off like a lotus leaf" loading="lazy" />
+    </div>
+    <div class="space-y-8 reveal order-1 md:order-2">
+      <span class="font-label-sm text-label-sm text-primary-container border-l-4 border-primary-container pl-4 uppercase">The Hydrophobic Effect</span>
+      <h2 class="font-headline-lg text-headline-lg headline-resp">Water rolls. Dirt follows. <span class="text-primary">The surface stays clean.</span></h2>
+      <div class="space-y-4 font-body-lg text-on-surface-variant leading-relaxed">
+        <p>Once Ceramic Pro bonds, the surface energy of your paint, glass or gelcoat drops dramatically. Water can no longer flatten and cling — it beads, balls up and rolls away, carrying contaminants with it.</p>
+        <p>This isn't a topical wax effect that fades after three washes. The hydrophobicity is the surface itself — molecularly sealed at the nano-pore level for years of true low-maintenance protection.</p>
+      </div>
+      <div class="flex gap-6 flex-wrap">
+        <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">water_drop</span><span class="font-label-sm text-label-sm">Self-Cleaning</span></div>
+        <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">shield</span><span class="font-label-sm text-label-sm">Sealed at Nano-Pore Level</span></div>
       </div>
     </div>
   </section>
@@ -227,7 +252,7 @@
 <footer class="bg-surface-container-lowest border-t border-outline-variant/10">
   <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-20 grid grid-cols-1 md:grid-cols-4 gap-12">
     <div>
-      <img src="assets/cp-logo.webp" alt="Ceramic Pro" class="h-12 w-auto mb-4" />
+      <img src="assets/cp-logo-white.webp" alt="Ceramic Pro" class="h-12 w-auto mb-4" />
       <p class="text-on-surface-variant text-sm">The global leader in nanoceramic surface protection — engineered for Aotearoa New Zealand.</p>
     </div>
     <div>
@@ -265,5 +290,31 @@
 </footer>
 
 <script src="assets/site.js"></script>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.180.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.180.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module">
+  // Start loading three.js + the viewer + the GLB during browser idle time,
+  // right after the rest of the page is interactive. By the time the section
+  // scrolls into view, everything is parsed, downloaded, decoded, and
+  // shader-compiled — no first-paint jitter.
+  const mount = document.getElementById('car-viewer');
+  if (mount) {
+    const start = async () => {
+      const { initCarViewer } = await import('./assets/car-viewer.js');
+      initCarViewer(mount, { modelUrl: 'assets/3d/audi_r8.glb' });
+    };
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(start, { timeout: 1200 });
+    } else {
+      setTimeout(start, 600);
+    }
+  }
+</script>
 </body>
 </html>
